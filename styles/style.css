@@ -26,6 +26,7 @@ nav{
     height: 80px;
     align-items: center;
     font-size: 2rem;
+    top: 0;
 }
 
 ul{
@@ -45,7 +46,7 @@ ul li{
     align-items: center;
     display: flex;
     height: 100%;
-    
+    align-self: center;
 }
 
 ul li:hover{
