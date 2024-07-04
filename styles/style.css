@@ -73,11 +73,11 @@ ul.menu li:hover{
 .secao{
     min-height: 100vh;
     display: flex;
-    
 }
 
 h1, h2 , h3 , h4, h5, h6{
     font-family: "Montserrat", sans-serif;
+    font-size: 4rem;
 }
 
 .secao1{
@@ -95,5 +95,44 @@ ul.columns{
 }
 
 ul.columns li{
+    text-align: center;
     padding: 10px;
+    height: 60%;
+    
 }
+
+.grid{
+    display: grid;
+    width: 70%;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  auto auto;
+   
+   
+}
+
+.grid div{
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.gal{
+    font-size: 3rem;
+   
+}
+.galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.6rem;
+    
+}
+
