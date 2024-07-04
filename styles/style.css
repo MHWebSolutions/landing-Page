@@ -2,9 +2,10 @@ html{
     margin: 0;
     padding: 0;
     font-size: 62.5%;
-    box-sizing: border-box;
+    
     margin-block-start: 0;
     margin-block-end: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -13,9 +14,15 @@ body{
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
 :root{
     --primary-color: #240128;
     --white-color: #FFFFFF;
+    --gray-color: #ffffff8c;
 }
 nav{
     display: flex;
@@ -40,16 +47,19 @@ ul{
     height: 100%;
     margin-block-start: 0;
     margin-block-end: 0;
+    padding-inline-start: 0;
 }
 
-ul li{
+ul.menu li{
+    width: 100%;
     align-items: center;
     display: flex;
     height: 100%;
     align-self: center;
+    padding: 0 10px 0 10px;
 }
 
-ul li:hover{
+ul.menu li:hover{
     background: gray;
 }
 
@@ -62,9 +72,28 @@ ul li:hover{
 
 .secao{
     min-height: 100vh;
+    display: flex;
     
 }
 
 h1, h2 , h3 , h4, h5, h6{
     font-family: "Montserrat", sans-serif;
+}
+
+.secao1{
+    margin: 15% auto;
+    font-size: 1.6rem;
+    width: 50%;
+}
+
+.container{
+    width: 100%;
+}
+ul.columns{
+    font-size: 1.6rem;
+    margin: auto;
+}
+
+ul.columns li{
+    padding: 10px;
 }
