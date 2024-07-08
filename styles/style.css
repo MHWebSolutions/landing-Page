@@ -63,6 +63,10 @@ ul.menu li:hover{
     background: gray;
 }
 
+ul.menu li a{
+    display: block;
+    margin: auto;
+}
 
 .main-bg{
     background-image: url('/assets/endless-constellation.svg');
@@ -103,11 +107,11 @@ ul.columns li{
 
 .grid{
     display: grid;
-    width: 70%;
+    width: 100%;
+    height: 100%;
     gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:  auto auto;
-   
    
 }
 
@@ -123,16 +127,35 @@ img{
 
 }
 
-.gal{
-    font-size: 3rem;
-   
-}
+
 .galeria{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    height: 50vh;
+}
+
+.flex{
     font-size: 1.6rem;
-    
+    display: flex;
+    align-items: center;
+    margin: auto 70px;
+}
+
+.flex .part{
+    width: 40%;
+}
+
+.heading{
+    justify-self: center;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    font-size: 2rem;
+    padding: 1rem;
+
+}
+
+#Five{
+    flex-direction: column;
 }
 
